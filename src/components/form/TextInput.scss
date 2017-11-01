@@ -1,0 +1,31 @@
+@import '~styles/base';
+
+.input-container {
+  width: 100%;
+//  max-width: 500px;
+  margin-bottom: 20px;
+  position: relative;
+
+  label {
+    font-weight: bold;
+    font-size: 13px;
+    color: $black;
+    font-family: $lato;
+  }
+
+  input {
+    width: 100%;
+    display: block;
+    line-height: 50px;
+    border: 1px solid $grey;
+    padding: 0 10px;
+  }
+
+  .help-block {
+    font-weight: bold;
+    font-size: 13px;
+    color: $mainRed;
+    position: absolute;
+    bottom: -21px;
+  }
+}

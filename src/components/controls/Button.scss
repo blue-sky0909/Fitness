@@ -1,0 +1,95 @@
+@import '~styles/base';
+
+.button_button {
+  background: none;
+  border: none;
+  appearance: none;
+  padding: 0 30px;
+  margin: 0;
+  cursor: pointer;
+
+  &:focus { outline: 0; }
+
+  &.button_bordered {
+    font-family: $oswald;
+    text-transform: uppercase;
+    border: 2px solid;
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+
+    &:disabled {
+      border-color: $darkerGrey !important;
+      color: $darkerGrey !important;
+    }
+
+    &.button_light-grey {
+      border-color: #a4a4a4;
+      color: #a4a4a4;
+    }
+
+    &.button_grey {
+      border-color: $darkGrey;
+      color: $darkGrey;
+      width: 205px;
+    }
+
+    &.button_red {
+      border-color: $mainRed;
+      color: $mainRed
+    }
+  }
+
+  &.button_simple {
+    padding: 0 5px;
+
+    &.button_grey {
+      color: $darkerGrey
+    }
+
+    &.button_red {
+      color: $mainRed
+    }
+  }
+
+  &.button_with-background {
+    text-transform: uppercase;
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    &.button_red {
+      letter-spacing: 1.5px;
+      font-family: $oswald;
+      background-color: $mainRed;
+      color: $white;
+    }
+  }
+
+  &.button_normal {
+    line-height: 38px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  &.button_big {
+    line-height: 60px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  &.button_block {
+    width: 100%;
+  }
+
+  &.button_rounded {
+    border-radius: 4px;
+  }
+}

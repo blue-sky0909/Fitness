@@ -1,0 +1,111 @@
+@import '~styles/base';
+
+#mealPlans {
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+	h1 {
+		margin-bottom: 30px
+	}
+	h3 {
+		margin-bottom: 50px;
+	}
+	.membership-lists {
+		margin-bottom: 100px;
+	}
+	.tight-padding {
+		padding: 0 40px;
+		@media screen and (max-width: 992px) {
+			padding: 0px 10px;
+			margin-bottom: 40px;
+		}
+		.pricing-wrap {
+			text-align: center;
+			background: #fff;
+			box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.25);
+			.title-wrap {
+				color: #fff;
+				padding: 20px;
+			}
+			.price-wrap {
+				background: #ececec;
+				padding: 20px;
+			}
+			.features-wrap {
+				padding: 20px;
+				border-left: 1px solid #dedede;
+				border-right: 1px solid #dedede;
+				ul {
+					padding: 0;
+					list-style-type: none;
+					li {
+						display: flex;
+						align-items: baseline;
+						text-align: left;
+						p {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+			p, li {
+				margin-bottom: 0;
+				font-size: 19px;
+			}
+			.button-wrap {
+				display: block;
+				padding: 0;
+				width: 100%;
+
+				.upgrade-button {
+					padding: 20px;
+					text-transform: uppercase;
+					color: #fff;
+					background: $mainRed;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.button-wrap:hover {
+				cursor: pointer;
+			}
+			.current-membership {
+				background: $basicPriceColor;
+				padding: 20px;
+				color: #ffffff;
+				width: 100%;
+			}
+			&.free {
+				.title-wrap {
+					background: $freePriceColor;
+				}
+				.features-wrap {
+					border-bottom: 1px solid #dedede;
+				}
+			}
+			&.basic {
+				.title-wrap {
+					background: $basicPriceColor;
+				}
+			}
+			&.pro {
+				.title-wrap {
+					background: $mainRed;
+				}
+			}
+			.memebership-title {
+				padding: 20px;
+				width: 100%;
+				color: #ffffff;
+				&.basic {
+				background: $basicPriceColor;
+				}
+				&.pro {
+					background: $mainRed;
+				}
+			}
+			
+		}
+	}
+}

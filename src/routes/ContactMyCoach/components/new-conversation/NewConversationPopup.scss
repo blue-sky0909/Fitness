@@ -1,0 +1,16 @@
+@import '~styles/base';
+
+#newConversationPopup {
+	width: 600px;
+  color: $black;
+  text-decoration: none;
+
+  .title {
+    padding-top: 15px;
+  }
+}
+@media(max-width: 767px) {
+  #newConversationPopup  {
+    width: 100%;
+  }
+}

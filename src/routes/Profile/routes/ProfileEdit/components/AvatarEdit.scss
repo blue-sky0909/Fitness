@@ -1,0 +1,40 @@
+@import '~styles/base';
+
+#avatarEdit {
+  width: 270px;
+
+  .avatarEdit_canvas {
+    vertical-align: top;
+    display: block;
+    margin: 9px 0 0 0px;
+  }
+
+  .avatarEdit_controls {
+    vertical-align: top;
+    display: block;
+    margin: 7px 10px 0 0;
+
+    input {
+      width: 180px;
+    }
+
+    div {
+      margin-top: -5px;
+      width: 180px;
+      color: $black;
+      text-align: center;
+      line-height: 100%;
+      font-family: $lato;
+    }
+  }
+
+  .avatarEdit_file-input {
+    display: none;
+  }
+
+  .avatarEdit_pick-button {
+    width: 185px;
+    display: block;
+    margin: 12px 0 30px;
+  }
+}

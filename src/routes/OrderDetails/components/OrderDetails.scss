@@ -1,0 +1,30 @@
+#orderDetails {
+	width: 100%;
+	float: left;
+
+  .orderDetails_back-button {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .orderDetails_title {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .orderDetails_attributes {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li: {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .orderDetails_action-button {
+    margin-top: 30px;
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+#ordersGrid {
+  table {
+    background-color: rgba(255,255,255,0.99);
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
+    font-size: 18px;
+      margin-top: 20px;
+    thead {
+      background: #FEFEFE;
+      tr {
+        th {
+          border-left: 1px solid #E8E8E8 !important;
+          border-bottom: 1px solid #E8E8E8 !important;
+          text-align: center;
+          font-weight: normal;
+          padding: 20px 5px;
+          font-family: "Lato",sans-serif;
+          color: #bababa;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          border-left: 1px solid #E8E8E8 !important;
+          border-bottom: 1px solid #E8E8E8 !important;
+          text-align: center;
+          font-weight: normal;
+          padding: 20px 5px;
+          font-family: "Lato",sans-serif;
+          line-height: 1.42857143;
+          vertical-align: top;
+          border-top: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}

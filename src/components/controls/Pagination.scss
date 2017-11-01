@@ -1,0 +1,52 @@
+@import '~styles/base';
+
+.pagination_list {
+  display: block;
+  margin: 0 auto;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+
+  .pagination_list-item {
+    &.pagination_list-item-arrow {
+      a{
+        background-color: $darkerGrey;
+        color: $white;
+        border: 1px solid $darkerGrey;
+      }
+
+      a.active {
+        background-color: $darkerGrey;
+      }
+    }
+
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    margin: 0 5px;
+
+
+    a {
+      display: block;
+      margin: 0 0px;
+      padding: 4px 13px;
+      color: $darkGrey;
+      border: 1px solid $darkGrey;
+      text-decoration: none;
+    }
+
+    a.active, a:hover {
+      color: $white;
+      background-color: $darkGrey;
+      text-decoration: none;
+    }
+  }
+
+  .pagination_list-brake {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 0;
+  }
+}

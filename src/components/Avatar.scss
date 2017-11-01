@@ -1,0 +1,23 @@
+.avatar {
+  border-radius: 50%;
+
+  &.avatar_normal {
+    width: 85px;
+    height: 85px;
+  }
+
+  &.avatar_small {
+    height: 60px;
+    width: 60px;
+  }
+
+  &.avatar_smallest {
+    height: 40px;
+    width: 40px;
+  }
+
+  &.avatar_big {
+    height: 160px;
+    width: 160px;
+  }
+}

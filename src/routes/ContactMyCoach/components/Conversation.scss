@@ -1,0 +1,54 @@
+@import '~styles/base';
+
+.conversation {
+  margin-top: 15px;
+  background: #fff;
+  position: relative;
+
+  .conversation_unread {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $mainRed;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    top: -17.5px;
+    right: -17.5px;
+  }
+
+  .chat-excerpt, .time, .open-close {
+    padding: 33px 0px;
+  }
+  .chat-content {
+    word-wrap: break-word;
+    padding: 33px 0px;
+  }
+  .open-close {
+    text-align: right;
+    padding-right: 20px;
+  }
+  .time {
+    text-align: right;
+  }
+  @media(max-width: 575px) {
+    .time {
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+  .user-chat-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15px;
+    img {
+      text-align: center;
+      max-width: 200%;
+      width: auto;
+    }
+  }
+}

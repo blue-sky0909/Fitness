@@ -1,0 +1,15 @@
+@import '~styles/base';
+
+.forum-like-button {
+  display: inline-block;
+  color: $darkerGrey;
+  font-size: 15px;
+
+  .liked {
+    color: $black;
+  }
+
+  .not-liked {
+    color: $darkerGrey;
+  }
+}

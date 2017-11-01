@@ -1,0 +1,36 @@
+@import '~styles/base';
+
+.open-conversation {
+  border-top: 1px solid #d9d9d9;
+  transition: max-height 1s ease;
+  max-height: 2000px;
+  
+  .chat-options {
+    border-top: 1px solid #d9d9d9;
+    background: #fafafa;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    input.type-message {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #d9d9d9;
+        border-radius: 2pt;
+        padding-left: 20px;
+    }
+    button.send {
+      width: 100%;
+      height: 50px;
+      background: $mainRed;
+      border: none;
+      border-radius: 2pt;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    @media(max-width: 767px) {
+      button.send {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+

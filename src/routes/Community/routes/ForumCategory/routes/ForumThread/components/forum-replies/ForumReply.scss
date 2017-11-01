@@ -1,0 +1,87 @@
+@import '~styles/base';
+
+#forumReplies {
+  background: #fff;
+  .forum-reply {
+    margin: 20px 0 0 0px;
+    border: 1px solid #ececec;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    .reply {
+      display: flex;
+      flex-direction: row;
+
+      .content {
+        flex-grow: 1;
+        min-height: 100%;
+        padding: 40px 30px 40px 30px;
+        font-family: $lato;
+        font-size: 14px;
+        position: relative;
+        border: 1px solid #ececec;
+        h4 {
+          font-size: 24px;
+          color: $mainRed;
+          padding: 10px 0 0;
+          margin: 0;
+          line-height: 100%;
+        }
+        .date {
+          opacity: 0.5;
+          color: #50535c;
+        }
+        .reply-btn {
+          text-decoration: none;
+          color: #8a8c94;
+          font-size: 20px;
+          margin-bottom: 20px;
+          padding: 0;
+          .bt-reply {
+            padding-left: 11px;
+          }
+        }
+        .reply-quoted-content {
+          background-color: #ececec;
+          padding: 15px;
+          border-left: 3px solid #ccc;
+          margin-top: 10px;
+        }
+        .text {
+          color: #50535c;
+          font-family: Lato;
+          font-size: 16px;
+          margin-top: 15px;
+          white-space: pre-line;
+        }
+        .controls, .options {
+          position: absolute;
+          right: 0;
+          margin: 10px;
+        }
+        .controls {
+          bottom: 0;
+        }
+        .options {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  #forumReplies {
+    .forum-reply {
+      .reply {
+        flex-direction: column;
+        .author {
+          flex: none;
+        }
+      }
+    }
+  }
+}

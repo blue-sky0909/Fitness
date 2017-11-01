@@ -1,0 +1,39 @@
+@import '~styles/base';
+
+#notifications {
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+
+  .notifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .notifications-list-item {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $grey;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .notification-text {
+        padding-left: 10px;
+        font-size: 12px;
+        color: #797c83;
+        width: calc(100% - 180px);
+      }
+
+      .notification-time {
+        width: 140px;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '~styles/base';
+
+#main-my-profile {
+	width: 100%;
+	float: left;
+	padding: 40px 0px;
+	.image-holder {
+		width: 160px;
+		height: 160px;
+		overflow: hidden;
+		border-radius: 50%;
+		text-align: center;
+		img {
+			max-width: 200%;
+		}
+	}
+
+  .main-my-profile-title {
+    min-height: 60px;
+  }
+
+	.account-display-info {
+		.macroValue,
+		.macroName {
+			display: inline-block;
+			width: 100%;
+			float: left;
+		}
+
+		.macroValue {
+			color: $mainRed;
+			font-weight: 700;
+		    font-size: 35px;
+		}
+
+		.macroName {
+			text-transform: uppercase;
+			color: $darkGrey;
+		  font-weight: 500;
+		}
+
+		.calcBtn {
+			display: inline-block;
+			background: $mainRed;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			letter-spacing: 2px;
+			max-width: 100%;
+		}
+	}
+}

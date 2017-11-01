@@ -1,0 +1,40 @@
+.forumThreadSearch {
+  .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d33131;
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    color: #d33131;
+  }
+
+  @media (max-width: 800px) {
+    .search-button {
+        width: 100%;
+    }
+  }
+
+  .input-container {
+    border: 2px solid #d33131;
+    border-radius: 5px;
+    height: 60px;
+    width: 345px;
+    color: #d33131;
+
+    i {
+      display: inline-block;
+      position: relative;
+      top: 1px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      line-height: 53px;
+      width: 283px;
+      margin: 1px 0 1px 20px;
+    }
+  }
+}

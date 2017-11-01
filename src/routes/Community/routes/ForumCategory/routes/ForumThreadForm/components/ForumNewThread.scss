@@ -1,0 +1,23 @@
+@import '~styles/base';
+
+#forumNewThread {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+  .new-forum-thread-wrap {
+    background-color: #fff;
+    padding: 35px;
+    @media screen and (max-width: 767px) {
+      padding: 15px;
+    }
+  }
+  .title {
+    font-weight: 900;
+    font-size: 29px;
+    margin-bottom: 30px;
+  }
+  .form-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+}

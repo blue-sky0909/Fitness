@@ -1,0 +1,16 @@
+@import '~styles/base';
+
+.dropdown__content  {
+  width: 225px !important;
+  position: absolute;
+  left: -225px !important;
+  line-height: 34px !important;
+  .control-item {
+    cursor: pointer;
+    span {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+}
+

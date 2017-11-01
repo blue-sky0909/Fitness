@@ -1,0 +1,34 @@
+@import '~styles/base';
+
+#header {
+	width: 100%;
+	float: left;
+	padding: 20px 0px;
+	background: #fff;
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+	.headerWelcome {
+		text-align: right;
+		padding-top: 17px;
+	}
+
+  .right-row {
+    justify-content: flex-end;
+  }
+
+	.headerProfileImage {
+		overflow: hidden;
+		text-align: center;
+
+		img {
+			max-width: 200%;
+		}
+    &.dropdown--active {
+
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+	}  
+}

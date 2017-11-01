@@ -1,0 +1,72 @@
+@import '~styles/base';
+
+.author {
+    flex: 0 0 200px;
+    text-align: center;
+    border: 1px solid #ececec;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .avatar {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 0;
+        margin-top: 6px;
+    }
+    h5 {
+        margin-top: 5px;
+        padding: 0;
+        color: #30283c;
+        font-family: $lato;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .user-level {
+        align-self: flex-start;
+        background-color: #d83737;
+        border-radius: 5px;
+        margin-top: 5px;
+        .level {
+            text-transform: uppercase;
+            color: #fefefe;
+            font-family: $oswald;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            padding: 5px 7px;
+        }
+    }
+    .date-joined {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        span {
+            color: #6f697a;
+            font-family: $lato;
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
+        }
+        .joined {
+            color: #37343b;
+            font-family: $oswald;
+            text-transform: uppercase;
+            padding-right: 3px;
+        }
+        .date {
+          padding-right: 7px;
+        }
+        .posts {
+          padding-right: 3px;
+          color: #37343b;
+          font-family: $oswald;
+          text-transform: uppercase;
+        }
+        .post-num {
+
+        }
+    }
+}

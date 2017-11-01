@@ -1,0 +1,115 @@
+@import '~styles/base';
+
+#mealPlans {
+	.panel {
+		background-color: #fff;
+		padding-top: 45px;
+		.panel-header {
+			margin-bottom: 45px;
+			.panel-title {
+				float: left;
+				font-size: 29px;
+				color: #000;
+			}
+			.create-mealplan-btn {
+				float: right;
+				display: inline-block;
+				padding: 8px 25px;
+				color: #fff;
+				font-size: 20px;
+				background-color: #ed1c24;
+				&:hover {
+					text-decoration: none;
+					background-color: darken(#ed1c24, 5%);
+				}
+			}
+			@media screen and (max-width: 767px) {
+				.panel-title, .create-mealplan-btn {
+					float: none;
+				}
+			}
+		}
+	}
+	.no-meal-plans {
+		padding: 10px;
+	}
+	.mealplans-list {
+		margin-bottom: 50px;
+		.panel-title {
+			margin-top: 5px;
+		}
+	}
+	.coach-mealplans-list {
+		.info-text {
+			padding: 0 15px;
+			text-align: center;
+			font-size: 29px;
+			margin-bottom: 35px;
+		}
+		.get-coach-btn {
+			margin-bottom: 45px;
+			display: inline-block;
+			width: 100%;
+			max-width: 400px;
+			padding: 8px;
+			text-align: center;
+			color: #fff;
+			font-size: 29px;
+			text-transform: uppercase;
+			background-color: #ed1c24;
+			&:hover {
+				text-decoration: none;
+				background-color: darken(#ed1c24, 5%);
+			}
+		}
+	}
+	.mealplans-list-table {
+		width: 100%;
+		th, td {
+			border-bottom: 1px solid #e0e0e0;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: center;
+			&:first-child {
+				text-align: left;
+			}
+		}
+		th {
+			font-weight: 600;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #cfcfcf;
+			padding-top: 5px;
+			padding-bottom: 20px
+		}
+		td {
+			font-size: 16px;
+			color: #6c6e7a;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.mealplan-item-actions {
+			button {
+				&:focus {
+					outline: none
+				}
+				&:hover {
+					color: darken(#ed1c24, 5%);
+				}
+				color: #ed1c24;
+				background-color: transparent;
+				&:first-child {
+					margin-right: 5px
+				}
+			}
+		}
+		.title {
+			color: #6c6e7a;
+			text-decoration: none !important;
+		}
+		&:hover {
+			cursor: pointer;
+			text-decoration: none !important;
+		}
+	}
+}

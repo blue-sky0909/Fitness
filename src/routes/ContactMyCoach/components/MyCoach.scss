@@ -1,0 +1,27 @@
+@import '~styles/base';
+
+#myCoach {
+  .name-wrap {
+    margin-top: 35px;
+  }
+  .new-conversation {
+    background: $mainRed;
+    display: block;
+    text-align: center;
+    width: 250px;
+    margin-left: 15px;
+    height: 70px;
+    margin-top: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 19px 0px;
+  }
+  .user-image {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+  }
+}

@@ -1,0 +1,295 @@
+.wrapper-decoration {
+    .header{
+        background: #464a4c;
+        height: 300px;
+        width: 100%;
+        position: absolute;
+        top: 178px;
+    }
+    .checkout-container{
+        clear: both;
+        z-index: 1;
+        position: relative;
+        padding: 15px;
+        padding-top: 0;
+        width: 960px;
+        margin: 0 auto;
+        .middle-container {
+            border-radius: 5px;
+            padding-bottom: 4px;
+            position: relative;
+            z-index: 3;
+            .about-product {
+                display: flex;
+                justify-content: space-around;
+                min-height: 265px;
+                position: relative;
+                background: #eee;
+                .prodct-image {
+                    max-width: 225px;
+                    max-height: 230px;
+                    margin: 22px 0 0 20px;
+                }
+                hgroup {
+                    width: 50%;
+                    .customize-text {
+                        font-size: 20px;
+                    }
+                }               
+            }
+             @media(max-width: 767px) {
+                .about-product {
+                    display: block;
+                    hgroup {
+                        width: 100%;
+                        float: left;
+                        h1 {
+                            font-size: 20px;
+                        }
+                        .customize-text {
+                            font-size: 16px;
+                        }
+                    }
+                    .money-back-color {
+                        position: absolute;
+                        top: 0;
+                        right: 20px;
+                        img {
+                            width: 75px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    @media(max-width: 970px) {
+        .checkout-container{
+            width: 100%;
+        }
+    }
+    .checkout-forms{
+        display: block;
+        clear: both;
+        background: #fff;
+        .row {
+            margin: 0;
+        }
+        .checkout-input-container {
+            padding: 45px 15px 30px 30px;
+            p, label {
+                display: block;
+                clear: both;
+                color: #999;
+                padding: 5px 0 0;
+            }
+            .submit-coupon {
+                float: right;
+                color: #999;
+                background: #eee;
+                border: none;
+                border-radius: 3px;
+            }
+            .section-title{
+                clear: both;
+                padding: 0 0 23px;
+                margin: 30px 15px 0;
+                h1 {
+                    font-size: 35px;
+                    font-weight: 400;
+                    color: #333;
+                }   
+            }
+            .non-physical-bump {
+                position: relative;
+                top: -10px;
+                .order-bump {
+                    top: 27px;
+                    border: 2px solid #00c0f0;
+                    clear: both;
+                    position: relative;
+                    background: #E9E9E9;
+                    padding: 15px;
+                    border-radius: 3px;
+                    .order-bump-btn {
+                        display: flex;
+                        padding: 20px;
+                        background: #00c0f0;
+                        border-radius: 3px;
+                        color: #fff;
+                        cursor: pointer;
+                        text-align: center;
+                        .order-bump-name {
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: center;
+                            text-align: center;
+                            margin: 0 auto;
+                            p {
+                                padding: 0;
+                                margin: 0;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                    .order-bump-desc {
+                        margin-top: 15px;
+                        line-height: 25px;
+                        p {
+                            color: #333;
+                        }
+                    }
+                }
+                .order-bump-border {
+                    border: 2px solid #00c0f0;
+                }
+            }
+            .order-payment {
+                position: relative;
+                padding: 50px 0 4px;
+                margin: 15px 0 0;
+                .payment-selection{
+                    display: flex;
+                    label {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                        span {
+                            margin-left: 5px;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .trust-seals {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                margin-top: 30px;
+            }
+            .pricing-summary {
+                margin-top: 20px;
+                .section-title {
+                    padding: 0;
+                    margin: 0;
+                }
+                .price {
+                    display: flex;
+                    justify-content: space-between;
+                    background: #e9e9e9;
+                    padding: 15px;
+                    font-size: 25px;
+                    .price-placement {
+                        display: flex;
+                    }
+                }                
+            }
+            .btn-success {
+                width: 100%;
+                margin-top: 20px;
+                height: 60px;
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+        }
+        .trust-panel {
+            background: #F8FFE2;
+            padding: 30px;
+            p {
+                text-align: center;
+            }
+            .list-wrapper {
+                h2 {
+                    text-align: center;
+                    font-size: 25px;
+                }
+            }
+            .sidebar-list {
+                margin-top: 25px;
+                li {
+                    display: block;
+                    clear: both;
+                    padding: 0 0 10px;
+                    font-size: 16px;
+                    color: #8a9a5f;
+                }
+            }
+            .testimonial-group {
+                h2 {
+                    text-align: center;
+                }
+                .testimonial-item {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    min-height: 100px;
+                    .testimonial-image {
+                        width: 64px;
+                        height: 64px;
+                        float: left;
+                        img {
+                            width: 100%!important;
+                            height: 100%!important;
+                            object-fit: cover;
+                            border-radius: 100%;
+                        }
+                    }
+                    .testimonial-text {
+                        vertical-align: middle;
+                        color: #656565;
+                        font-family: Georgia;
+                        font-size: 15px;
+                        font-style: italic;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        display: block;
+        clear: both;
+        .footer-decoration {
+            height: 250px;
+            width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+            .middle-container {
+                padding-top: 30px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+            P {
+                display: block;
+                clear: both;
+                font-size: 13px;
+                color: #a1a1a1;
+            }
+            @media(max-width: 767px) {
+                .middle-container {
+                    padding-top: 30px;
+                    text-align: center;
+                    display: block !important;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                }
+                p {
+                    text-align: center
+                }
+            }
+        }
+        @media(max-width: 767px) {
+            .footer-decoration {
+                   width: 100%;
+            }
+        }
+       
+    }
+}
